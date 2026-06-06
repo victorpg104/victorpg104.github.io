@@ -251,7 +251,8 @@ section {
   overflow: hidden;
   border: 1px solid var(--muted2);
   cursor: pointer;
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.3s;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              border-color 0.3s;
 }
 
 .photo-card:hover {
@@ -300,8 +301,7 @@ section {
 .photo-caption {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 0; right: 0;
   background: linear-gradient(transparent, rgba(0,0,0,0.85));
   padding: 24px 16px 16px;
   font-family: var(--serif);
@@ -593,8 +593,7 @@ footer span { color: var(--pink); }
 .glitch::before, .glitch::after {
   content: attr(data-text);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   background: transparent;
   -webkit-background-clip: text;
@@ -614,13 +613,13 @@ footer span { color: var(--pink); }
 }
 @keyframes glitch1 {
   0%,90%,100% { clip-path: inset(100% 0 0 0); }
-  22% { clip-path: inset(10% 0 85% 0); }
+  92% { clip-path: inset(10% 0 85% 0); }
   95% { clip-path: inset(40% 0 43% 0); }
   98% { clip-path: inset(70% 0 5% 0); }
 }
 @keyframes glitch2 {
   0%,90%,100% { clip-path: inset(100% 0 0 0); }
-  23% { clip-path: inset(25% 0 58% 0); }
+  93% { clip-path: inset(25% 0 58% 0); }
   96% { clip-path: inset(60% 0 20% 0); }
   99% { clip-path: inset(5% 0 80% 0); }
 }
@@ -672,57 +671,6 @@ footer span { color: var(--pink); }
     <div class="scroll-hint">↓ &nbsp; scroll para continuar &nbsp; ↓</div>
   </section>
 
-  <!-- GALERÍA -->
-  <section id="galeria">
-    <div class="sec-label reveal">// galería</div>
-    <div class="sec-title reveal">Momentos guardados<br><em style="color:var(--pink);font-size:0.7em">en memoria RAM</em></div>
-
-    <div class="gallery-grid reveal">
-      <div class="photo-card card1">
-        <div class="photo-placeholder">
-          <div class="photo-icon">📸</div>
-          <span>foto_001.jpg</span>
-        </div>
-        <div class="photo-caption">El primer momento que lo noté todo</div>
-      </div>
-      <div class="photo-card card2">
-        <div class="photo-placeholder">
-          <div class="photo-icon">🌿</div>
-          <span>foto_002.jpg</span>
-        </div>
-        <div class="photo-caption">Tu risa que no puedo olvidar</div>
-      </div>
-      <div class="photo-card card3">
-        <div class="photo-placeholder">
-          <div class="photo-icon">✨</div>
-          <span>foto_003.jpg</span>
-        </div>
-        <div class="photo-caption">Ese día que todo cambió</div>
-      </div>
-      <div class="photo-card card4">
-        <div class="photo-placeholder">
-          <div class="photo-icon">🌙</div>
-          <span>foto_004.jpg</span>
-        </div>
-        <div class="photo-caption">Noches hablando de todo y nada</div>
-      </div>
-      <div class="photo-card card5">
-        <div class="photo-placeholder">
-          <div class="photo-icon">☕</div>
-          <span>foto_005.jpg</span>
-        </div>
-        <div class="photo-caption">Los pequeños momentos que más importan</div>
-      </div>
-      <div class="photo-card card6">
-        <div class="photo-placeholder">
-          <div class="photo-icon">💫</div>
-          <span>foto_006.jpg</span>
-        </div>
-        <div class="photo-caption">Tú, simplemente tú</div>
-      </div>
-    </div>
-  </section>
-
   <!-- CARTA -->
   <section id="carta">
     <div class="sec-label reveal">// carta.txt</div>
@@ -736,22 +684,26 @@ footer span { color: var(--pink); }
             Melody,
           </p>
           <p>
-            Hay personas que entran a tu vida como un <span class="code-inline">import</span> que no pediste y sin embargo tu código empieza a funcionar mejor. Tú eres esa persona.
+            Hay personas que entran a tu vida como un <span class="code-inline">import</span> que no pediste y sin embargo tu código 
+            empieza a funcionar mejor. Tú eres esa persona.
           </p>
           <p>
-            No sé exactamente en qué momento pasó. Tal vez fue tu manera de reír, o cómo dices las cosas con esa honestidad tan tuya. El caso es que <span class="highlight">ya no puedo imaginarlo sin ti.</span>
-          </p>
-          <p>
-            Soy informático, así que perdóname si a veces expreso mejor lo que siento en código que en palabras. Pero esto lo quiero decir claro, sin comentarios ni funciones que lo compliquen:
+            Soy informático, así que perdóname si a veces expreso mejor lo que siento 
+            en código que en palabras. Pero esto lo quiero decir claro, sin comentarios 
+            ni funciones que lo compliquen:
           </p>
           <p>
             <span class="highlight">Me gustas. Mucho. De verdad.</span>
           </p>
           <p>
-            No sé si lo que tenemos tiene nombre oficial — <span class="code-inline">ChatGPT</span> dice que somos <em>novios clandestinos</em>, y la verdad... no le falta razón. Pero yo preferiría que tuviéramos un nombre real.
+            No sé si lo que tenemos tiene nombre oficial — 
+            <span class="code-inline">ChatGPT</span> dice que somos <em>novios clandestinos</em>, 
+            y la verdad... no le falta razón. 
+            Pero yo preferiría que tuviéramos un nombre real.
           </p>
           <p>
-            Estaré a tu lado para que decidas. Y si la respuesta es sí, prometo que seré el mejor <span class="code-inline">commit</span> de tu vida.
+            Estaré a tu lado para que decidas. Y si la respuesta es sí, 
+            prometo que seré el mejor <span class="code-inline">commit</span> de tu vida.
           </p>
 
           <div class="letter-sig">Con todo lo que hay en mi corazón ♡</div>
@@ -777,11 +729,7 @@ footer span { color: var(--pink); }
       <div id="qScreen" class="q-body">
         <div class="q-prompt">// ejecutando consulta crítica...</div>
         <div class="q-question">¿Quieres ser<br>mi novia, <span class="q-name">Melody</span>?</div>
-        <div class="q-sub">[ selecciona una opción ]</div>
-        <div class="q-buttons">
-          <button class="q-btn btn-yes" onclick="responder(true)">❯ sí.exe</button>
-          <button class="q-btn btn-no" id="btnNo" onclick="responder(false)">✕ no</button>
-        </div>
+
       </div>
 
       <!-- Respuesta SÍ -->
@@ -850,6 +798,7 @@ function randomParticle() {
 }
 
 for (let i = 0; i < 120; i++) particles.push(randomParticle());
+
 function drawParticles() {
   ctx.clearRect(0, 0, W, H);
   particles.forEach(p => {
@@ -896,20 +845,6 @@ function responder(yes) {
     document.getElementById('resNo').classList.add('active');
   }
 }
-
-// ── NO button: run away ──
-const btnNo = document.getElementById('btnNo');
-let noClicks = 0;
-btnNo.addEventListener('mouseover', () => {
-  noClicks++;
-  if (noClicks < 4) {
-    const rect = btnNo.parentElement.getBoundingClientRect();
-    const maxX = rect.width - btnNo.offsetWidth - 16;
-    btnNo.style.position = 'relative';
-    btnNo.style.left = Math.random() * maxX - maxX/2 + 'px';
-    btnNo.style.top  = (Math.random() * 40 - 20) + 'px';
-  }
-});
 
 // ── FLOATING HEARTS ──
 function launchHearts() {
